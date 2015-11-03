@@ -27,9 +27,9 @@
 # @parameter start_on_minutes      At which minute should be the first run
 # @parameter start_on_hours        At which hour should be the first run
 # @parameter start_on_day_of_week  At which day of week should be the first run
-# @parameter periodicity_minutes   How often should the job run
-# @parameter periodicity_hours     How often should the job run
-# @parameter periodicity_days      How often should the job run
+# @parameter periodicity_minutes   How often should the job run (in minutes)
+# @parameter periodicity_hours     How often should the job run (in hours)
+# @parameter periodicity_days      How often should the job run (in days)
 # @parameter mode                  "nodups": avoid duplicate runs in the same period / "catchup": avoid duplicates and one or more run have been missed, run once before next period / "stateless": no check is done on past runs
 # 
 # @class_prefix schedule_simple
