@@ -50,4 +50,11 @@ bundle agent openssh_knowledge
 
     debian::
       "ssh_etc_initd"                 string => "ssh";
+      
+    redhat|centos|oracle::
+      "ssh_etc_initd"                 string => "sshd";
+      
+    freebsd::
+      # actually it's in one of two rc.d directories
+      "ssh_etc_initd"                 string => "sshd";
 }
